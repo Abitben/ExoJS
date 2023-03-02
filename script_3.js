@@ -8,8 +8,8 @@
     console.log("Et voilà le travail !");
     for(let x = 1; x <= number; x++){
       hashes = hash.repeat(x) ;
-      symetry = (number + 1) - x ;
-      spaces = space.repeat(symetry) ;
+      countdown = number - x ;
+      spaces = space.repeat(countdown) ;
       console.log(spaces + hashes)
     }
   }
