@@ -23,7 +23,7 @@ function filteryear() {
   console.log(
     "****************Les entrepreneurs qui sont nés dans les années 1970"
   );
-  for (let entrepreneur in entrepreneurs) {
+  for (let entrepreneur of entrepreneurs) {
     if (entrepreneur.year >= 1970 && entrepreneur.year < 1980) {
       console.log(entrepreneur);
     }

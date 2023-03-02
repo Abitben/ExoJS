@@ -105,10 +105,3 @@ minrented();
 find873495()
 delete133712();
 alphabetical(delete133712());
-
-
-
-
-
-
-
