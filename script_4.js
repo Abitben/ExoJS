@@ -23,7 +23,7 @@ function filteryear() {
   console.log(
     "****************Les entrepreneurs qui sont nés dans les années 1970"
   );
-  for (let entrepreneur of entrepreneurs) {
+  for (let entrepreneur in entrepreneurs) {
     if (entrepreneur.year >= 1970 && entrepreneur.year < 1980) {
       console.log(entrepreneur);
     }
@@ -42,30 +42,26 @@ function array() {
 function age() {
   console.log("******* L'âge de chacun des entrepreneurs");
   for (let entrepreneur of entrepreneurs) {
-    let birth_year = "" ;
-    birth_year = entrepreneur.year ;
-    let age = "" ;
-    let year_now =  new Date().getFullYear();
+    let birth_year = "";
+    birth_year = entrepreneur.year;
+    let age = "";
+    let year_now = new Date().getFullYear();
     age = year_now - birth_year;
     console.log(entrepreneur.first, entrepreneur.last);
-    console.log(age)
+    console.log(age);
   }
 }
 
-function alphabetical () {
+function alphabetical() {
   console.log("******* Le nom des entrepreneurs trié par ordre alphabétique");
   let array = [];
   for (let entrepreneur of entrepreneurs) {
     array.push(entrepreneur.last);
   }
-  console.log(array.sort())
+  console.log(array.sort());
 }
 
 filteryear();
 array();
-age()
+age();
 alphabetical();
-
-
-
-
