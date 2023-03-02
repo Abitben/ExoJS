@@ -1,6 +1,4 @@
-
 function factorial(input){
-let number = 1;
 let result = 1;
 number = Number(input);
 for(let x = 1; x <= input; x++){

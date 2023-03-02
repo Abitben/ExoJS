@@ -2,14 +2,11 @@
     const hash = "#"
     const space = " "
     number = Number(input);
-    let hashes = ""
-    let symetry = ""
-    let spaces = ""
     console.log("Et voilà le travail !");
     for(let x = 1; x <= number; x++){
-      hashes = hash.repeat(x) ;
-      countdown = number - x ;
-      spaces = space.repeat(countdown) ;
+      let hashes = hash.repeat(x) ;
+      let countdown = number - x ;
+      let spaces = space.repeat(countdown) ;
       console.log(spaces + hashes)
     }
   }
